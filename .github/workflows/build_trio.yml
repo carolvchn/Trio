@@ -316,6 +316,9 @@ jobs:
           # Several patches may be added per submodule.
           # Adding comments (#) is strongly recommended to easily tell the individual patches apart.
 
+          # OmniBLE: pod-keep-alive add to Trio-dev
+            curl  https://github.com/carolvchn/OmniBLE/commit/41dd40e695ea390d7ada814a62c2a99cfde5d531 patch/ git apply -v --directory=Module
+
       # Patch Fastlane Match to not print tables
       - name: Patch Match Tables
         run: |
